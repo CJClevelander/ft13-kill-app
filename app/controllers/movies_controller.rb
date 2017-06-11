@@ -30,19 +30,19 @@ class MoviesController < ApplicationController
     @link = links().sample
     hash = Hash[links().map.with_index.to_a]
     @cause = causes[hash[@link]]
-    if hash[@link] < 10
+    if hash[@link] < 11
       @film = films[0]
-    elsif hash[@link] < 18
+    elsif hash[@link] < 19
       @film = films[1]
-    elsif hash[@link] < 30
+    elsif hash[@link] < 31
       @film = films[2]
-    elsif hash[@link] < 44
+    elsif hash[@link] < 45
       @film = films[3]
-    elsif hash[@link] < 63
+    elsif hash[@link] < 64
       @film = films[4]
-    elsif hash[@link] < 78
+    elsif hash[@link] < 79
       @film = films[5]
-    elsif hash[@link] < 94
+    elsif hash[@link] < 95
       @film = films[6]
     else
       @film = "Placeholder"
